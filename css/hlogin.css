@@ -51,69 +51,60 @@ body {
   color: white;
   cursor: pointer;
 }
-.lancer {
-  border: 2px solid black;
+.box {
+  width: 300px;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
   position: absolute;
-  top: 15%;
-  width: 20em;
-  height: 20em;
-  align-items: center;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0);
   text-align: center;
-  padding: 2em;
-  left: 2%;
 }
-.lancer h1 {
-  cursor: default;
-  font-family: sans-serif;
-  color: blue;
-}
-.lancer input {
-  width: 10em;
-  margin: 1em auto;
-  height: 3em;
-  border: 3px solid black;
-  color: black;
+.box h1 {
+  color: red;
+  text-transform: uppercase;
   font-weight: 700;
-  outline: none;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
   background: none;
-  cursor: pointer;
-  transition: 0.5s;
-  font-size: 1em;
-}
-.lancer input:hover {
-  box-shadow: 0.5em 0.5em 0.5em blue;
-  color: blue;
-}
-.hire {
-  border: 2px solid black;
-  position: absolute;
-  top: 15%;
-  width: 20em;
-  height: 20em;
-  align-items: center;
+  display: block;
+  margin: 20px auto;
   text-align: center;
-  padding: 2em;
-  left: 30%;
-}
-.hire h1 {
-  cursor: default;
-  font-family: sans-serif;
-  color: red;
-}
-.hire input {
-  width: 10em;
-  margin: 1em auto;
-  height: 3em;
-  border: 3px solid black;
-  color: black;
-  font-weight: 700;
+  border: 3px solid red;
+  padding: 14px 10px;
+  width: 220px;
   outline: none;
-  background: none;
-  cursor: pointer;
-  transition: 0.5s;
-  font-size: 1em;
-}
-.hire input:hover {
-  box-shadow: 0.5em 0.5em 0.5em red;
   color: red;
+  border-radius: 24px;
+  transition: 0.5s;
+}
+.box input[type="text"]:hover {
+  width: 270px;
+  color: orange;
+}
+.box input[type="password"]:hover {
+  width: 270px;
+  color: orange;
+}
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid red;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: red;
+  border-radius: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.box input[type="submit"]:hover {
+  background: orange;
 }

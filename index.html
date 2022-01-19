@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
 </head>
 <body>
       <div class="nav">
@@ -19,15 +20,15 @@
       </div>
       <div class="lancer">
               <h1>Lancer ?</h1>
-              <input type="submit" id="login" value="Login">
+              <input type="submit" id="login" value="Login" onclick="redirect('llogin')">
               <br>
-              <input type="submit" id="signup" value="Signup">
+              <input type="submit" id="signup" value="Signup" onclick="redirect('lsignup')">
       </div>
       <div class="hire">
         <h1>Want To Hire ?</h1>
-        <input type="submit" id="login" value="Login">
+        <input type="submit" id="login" value="Login" onclick="redirect('hlogin')">
         <br>
-        <input type="submit" id="signup" value="Signup">
+        <input type="submit" id="signup" value="Signup" onclick="redirect('hsignup')">
 </div>  
 </body>
 </html>
